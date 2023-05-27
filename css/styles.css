@@ -82,6 +82,7 @@ body {
 
 .header {
     border-bottom: 1px solid var(--border-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container{
@@ -212,17 +213,17 @@ padding: 120px 0;
 }
 
 .feature-under-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 112px;
     background-color: var(--footer-studio);
-    padding: 24px 100px;
+    border-radius: 4px;
     margin-bottom: 8px;
 }
 
-.feature-icon{
-    width: 64px;
-    height: 64px;
-}
+
 .feature-text{
     max-width: 264px;
 }
@@ -309,9 +310,7 @@ width: 40px;
     background-color: var(--hover-color);
 }
 .team-soc-icon{
-    width: 20px;
-    height: 20px;
-    fill: var(--hero-bkgrd-color);
+    fill: var(--footer-studio);
 } 
 
 /* ---------------------CUSTOMERS---------------------- */
@@ -347,13 +346,11 @@ width: 40px;
 }
 
 .customers-icon{
-    width: 104px;
-    height: 56px;
     fill: currentColor;
 }
-.customers-link:hover{
-    border-color: var(--hover-color);
-    color:var(--hover-color);
+.customers-link:hover,.customers-link:focus{
+    border-color: #404bbf;
+    color:#404bbf;
 }
 
 /* -------FOOTER---------- */
@@ -379,6 +376,7 @@ footer {
 .foter-sections{
     display: flex;
     gap: 120px;
+    align-items: baseline
 }
 
 .foter-soc{
@@ -429,7 +427,11 @@ border-top:none;
     padding: 32px 16px;
 }
 
+.portfolio-link{
+    display: block;
+}
 .portfolio-text-item:hover,.portfolio-text-item:focus{
+    display: block;
     border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
