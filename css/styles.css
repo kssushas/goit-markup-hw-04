@@ -375,10 +375,12 @@ footer {
 }
 .foter-sections{
     display: flex;
-    gap: 120px;
     align-items: baseline
 }
 
+.first-sec-footer{
+    margin-right: 120px;
+}
 .foter-soc{
     display: flex;
     gap:16px;
@@ -406,10 +408,10 @@ footer {
 }
 
 .foter-soc-icon {
-    fill: var(--hero-bkgrd-color);
+    fill: var(--footer-studio);
 }
 .foter-text-link{
-    font-weight: 500px;
+    font-weight: 500;
     color: var(--hero-bkgrd-color);
     margin-bottom: 16px;
 }
